@@ -139,3 +139,14 @@ def run_bot():
 
 if __name__ == "__main__":
     run_bot()
+
+
+# --- KODE BARU (BENAR UNTUK RAILWAY) ---
+browser = p.chromium.launch(
+    headless=True,  # <--- Wajib True (Jalan tanpa layar)
+    args=[
+        "--no-sandbox", 
+        "--disable-setuid-sandbox",
+        "--disable-dev-shm-usage"
+    ]
+)
